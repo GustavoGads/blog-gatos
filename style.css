@@ -166,6 +166,10 @@ footer p {
 
 @media (max-width: 1216px) {
 
+    header div {
+        gap: 1.3rem;
+    }
+
     main {
         display: flex;
         flex-direction: column;
