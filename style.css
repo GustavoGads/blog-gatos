@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+
+    --hue: 195;
+    --color-base-white: #ffffff;
+    --color-base-header-footer: hsl(var(--hue), 46%, 40%);
+
+    font-size: 65.2%;
+}
+
+html, body, input {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#app {
+    height: 100vh;
+}
+
+.container {
+    padding: 1.2rem 11.2rem;
+    
+}
+
+header {
+    background-color: var(--color-base-header-footer);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 3.3rem;
+}
+
+header img {
+    width: 4.0rem;
+    height: 4.0rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+header input {
+    padding: 1.6rem;
+    width: 100%;
+    
+    background-color: hsla(0, 0%, 100%, 0.20);
+    color: #f8f8f8;
+    border: 0;
+    border-radius: 0.4rem;
+
+    font-size: 1.6rem;
+}
+
+header input::placeholder {
+    color: var(--color-base-white);
+}
+
+header form {
+    flex: 1;
+}
+
+header, footer {
+    color: #fff;
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    gap: 3.5rem;  
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+
+.news-wrapper {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.news-img img {
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.news-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-text h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.news-text p {
+    font-size: 1.4rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-icons {
+    display: flex;
+    gap: 1.4rem;
+}
+
+#main-img {
+    width: 100%;
+}
+
+.main-icons button {
+    background-color: var(--color-base-header-footer);
+    border: 0;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+
+footer {
+    background-color: var(--color-base-header-footer);
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 1500px){
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+} 
+
+@media (max-width: 1216px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 3.5rem;  
+    }
+
+    .container {
+        padding: 1.2rem 2.8rem;
+    }
+
+    .main-header {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: .8rem;
+    }
+}
